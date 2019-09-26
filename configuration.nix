@@ -36,5 +36,8 @@
 		vim.defaultEditor = true;
 	};
 
-	services.pcscd.enable = true;
+	services = {
+		pcscd.enable = true;
+		dbus.socketActivated = true;
+	};
 }
