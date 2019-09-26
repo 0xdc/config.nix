@@ -4,6 +4,12 @@
 	boot.loader.systemd-boot.enable = true;
 	boot.initrd.luks.devices.crypted.device = "/dev/disk/by-uuid/14591a8f-7b8a-453b-b9df-2e7ad3ffce71";
 
+	boot.initrd.preLVMCommands =
+		''
+		echo 18 | tee /sys/devices/system/cpu/intel_pstate/max_perf_pct
+		echo  1 | tee /sys/devices/system/cpu/intel_pstate/no_turbo
+		'';
+
 	networking = {
 		hostName = "samus";
 		networkmanager.enable = true;
