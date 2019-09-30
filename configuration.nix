@@ -8,6 +8,8 @@
 			./users/me.nix
 		];
 
+	boot.cleanTmpDir = true;
+
 	hardware = {
 		u2f.enable = true;
 	};
