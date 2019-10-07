@@ -8,6 +8,7 @@
 		''
 		echo 18 | tee /sys/devices/system/cpu/intel_pstate/max_perf_pct
 		echo  1 | tee /sys/devices/system/cpu/intel_pstate/no_turbo
+		echo  1 | tee /sys/class/leds/chromeos::kbd_backlight/brightness
 		'';
 
 	networking = {
