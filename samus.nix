@@ -11,6 +11,9 @@
 		echo  1 | tee /sys/class/leds/chromeos::kbd_backlight/brightness
 		'';
 
+	boot.initrd.availableKernelModules = [
+		"cros_kbd_led_backlight"
+	];
 	networking = {
 		hostName = "samus";
 		networkmanager.enable = true;
