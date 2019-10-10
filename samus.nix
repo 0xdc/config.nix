@@ -20,7 +20,7 @@
 		dhcpcd.enable = false;
 	};
 
-	system.stateVersion = "19.03";
+	system.stateVersion = "19.09";
 	sound.enable = true;
 
 	hardware = {
