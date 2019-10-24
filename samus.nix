@@ -27,6 +27,9 @@
 	hardware = {
 		brightnessctl.enable = true;
 		bluetooth.enable = true;
-		pulseaudio.enable = true;
+		pulseaudio = {
+			enable = true;
+			package = pkgs.pulseaudioFull;
+		};
 	};
 }
