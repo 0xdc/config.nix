@@ -30,6 +30,8 @@
 		pulseaudio = {
 			enable = true;
 			package = pkgs.pulseaudioFull;
+			support32Bit = true;
 		};
+		opengl.driSupport32Bit = true;
 	};
 }
