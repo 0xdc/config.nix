@@ -38,6 +38,10 @@
 	virtualisation = {
 		kvmgt = {
 			enable = true;
+			device = "0000:00:02.0";
+			vgpus = {
+				"i915-GVTg_V4_8" = { uuid = "067d7f22-ffc7-11e9-bfb6-0380a078d6c1"; };
+			};
 		};
 		libvirtd = {
 			enable = true;
