@@ -34,4 +34,13 @@
 		};
 		opengl.driSupport32Bit = true;
 	};
+
+	virtualisation = {
+		kvmgt = {
+			enable = true;
+		};
+		libvirtd = {
+			enable = true;
+		};
+	};
 }
