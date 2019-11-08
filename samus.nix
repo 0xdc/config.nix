@@ -43,4 +43,15 @@
 			enable = true;
 		};
 	};
+
+	security.pam.loginLimits = [
+	# https://github.com/NixOS/nixos/issues/293#issuecomment-234194392
+	# https://wiki.archlinux.org/index.php/Intel_GVT-g#Windows_hanging_with_bad_memory_error
+	{
+		domain = "@libvirtd";
+		type = "-"; # hard and soft limits
+		item = "memlock";
+		value = "8388608";
+	}
+	];
 }
